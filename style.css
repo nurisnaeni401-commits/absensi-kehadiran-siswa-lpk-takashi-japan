@@ -1,0 +1,142 @@
+/* Reset & Base - Mengatur dasar agar tampilan konsisten di semua browser */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f2f5; /* Background luar yang modern */
+}
+
+/* Container Utama berbentuk Kartu Putih */
+.container {
+    text-align: center;
+    max-width: 420px;
+    width: 90%;
+    padding: 35px 25px;
+    background-color: #ffffff;
+    border-radius: 25px; /* Sudut membulat yang elegan */
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1); /* Bayangan lembut */
+}
+
+/* Logo LPK Takashi di bagian atas */
+.logo-kecil {
+    width: 100px; /* Ukuran yang ideal */
+    height: auto;
+    margin-bottom: 15px;
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.05));
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Gaya Judul Absensi */
+h1 {
+    font-size: 1.15rem;
+    font-weight: 800;
+    color: #333;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Area Kamera Scanner */
+#reader {
+    width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 4px solid #f8f9fa; /* Frame kamera yang bersih */
+    background-color: #222;
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.2);
+}
+
+/* Tombol "Stop Scanning" (Jika muncul dari sistem library) */
+#reader button {
+    padding: 10px 15px !important;
+    margin-top: 10px !important;
+    border-radius: 8px !important;
+    border: 1px solid #ddd !important;
+    background-color: #fff !important;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+/* Box Hasil Scan (Muncul saat nama terdeteksi) */
+#result-box {
+    margin-top: 25px;
+    padding: 15px;
+    border-radius: 12px;
+    background: #fdfdfd;
+    border-left: 6px solid #28a745; /* Aksen hijau di samping */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    text-align: left;
+}
+
+#status-text {
+    margin: 0;
+    font-size: 1rem;
+    color: #28a745;
+    font-weight: bold;
+}
+
+#result-box p {
+    margin: 5px 0 0;
+    color: #555;
+    font-size: 0.95rem;
+}
+
+#student-name {
+    font-weight: 700;
+    color: #000;
+}
+
+#student-id, #student-name {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Bagian Bawah & Link Spreadsheet */
+.link-spreadsheet {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #eeeeee;
+}
+
+.link-spreadsheet p {
+    font-size: 0.85rem;
+    color: #888;
+    margin-bottom: 15px;
+}
+
+/* Tombol Spreadsheet Modern (Warna Hijau Excel) */
+.btn-sheet {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 12px 20px;
+    background-color: #28a745;
+    color: white;
+    text-decoration: none;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+}
+
+.btn-sheet:hover {
+    background-color: #218838;
+    transform: translateY(-2px); /* Efek melayang sedikit */
+    box-shadow: 0 5px 15px rgba(40, 167, 69, 0.3);
+}
+
+/* Utility Class untuk menyembunyikan elemen */
+.hidden {
+    display: none;
+}

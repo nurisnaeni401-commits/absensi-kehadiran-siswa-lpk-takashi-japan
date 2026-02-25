@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scanner Absensi - LPK Takashi</title>
+    <script src="https://unpkg.com/html5-qrcode"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <img src="logotks.png" alt="Logo LPK Takashi" class="logo-kecil">
+        
+        <h1>ABSENSI SISWA LPK TAKASHI</h1>
+        
+        <div id="reader"></div>
+
+        <div id="result-box" class="hidden">
+        <h2 id="status-text">✅ Berhasil Absen</h2>
+        <p>ID Siswa: <span id="student-id">-</span></p> 
+        <p>Nama Siswa: <span id="student-name">-</span></p>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
